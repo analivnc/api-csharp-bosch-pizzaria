@@ -1,0 +1,63 @@
+.form-card {
+  max-width: 560px;
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, .06);
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.field label {
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+input[type="text"] {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+/* mantém padrão da pizza */
+.actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* botão padrão */
+button {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+button[type="submit"] {
+  background-color: #28a745;
+  color: white;
+}
+
+button[type="button"] {
+  background-color: #6c757d;
+  color: white;
+}
+
+
+
+.page {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  width: 100%;
+}
+
+.form-card {
+  width: 100%;
+  max-width: 560px;
+}

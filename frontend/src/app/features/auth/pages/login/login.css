@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Fredoka', sans-serif;
+}
+
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  background: #F28C28; /* laranja */
+}
+
+.login-card {
+  width: 100%;
+  max-width: 400px;
+  background: #FFF3D6; /* bege */
+  border-radius: 20px;
+  padding: 28px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+  border: 3px solid #000;
+  text-align: center;
+}
+
+.login-card h1 {
+  margin: 0;
+  color: #000;
+  font-size: 28px;
+}
+
+.login-card p {
+  margin: 8px 0 20px;
+  color: #333;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+label {
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #000;
+}
+
+input {
+  padding: 12px;
+  border: 2px solid #000;
+  border-radius: 12px;
+  font-size: 14px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #E63946; /* vermelho */
+  box-shadow: 0 0 0 2px rgba(230, 57, 70, 0.2);
+}
+
+/* botão principal */
+button[type="submit"] {
+  width: 100%;
+  border: none;
+  border-radius: 12px;
+  padding: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  background: #000;
+  color: #fff;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+button[type="submit"]:hover {
+  background: #E63946;
+}
+
+/* botão secundário */
+button:not([type="submit"]) {
+  width: 100%;
+  border-radius: 12px;
+  padding: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  background: transparent;
+  color: #000;
+  border: 2px solid #000;
+  transition: 0.3s;
+}
+
+button:not([type="submit"]):hover {
+  background: #000;
+  color: #fff;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.error {
+  color: #E63946;
+  margin-top: 12px;
+  font-weight: 500;
+}
+img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }

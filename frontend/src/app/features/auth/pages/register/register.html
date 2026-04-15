@@ -1,0 +1,32 @@
+<div class="login-page">
+  <div class="login-card">
+     <div class="header">
+      <img src="../../../../assets/snoop.png" alt="">
+      <h1>Criar Conta</h1>
+      <p class="subtitle">Cadastre-se no sistema</p>
+    </div>
+ 
+    <form [formGroup]="form" (ngSubmit)="submit()">
+      <div class="field">
+        <label>Usuário</label>
+        <input type="text" formControlName="username" placeholder="Digite seu usuário" />
+      </div>
+ 
+      <div class="field">
+        <label>Senha</label>
+        <input type="password" formControlName="password" placeholder="Digite sua senha" />
+      </div>
+ 
+      <button type="submit" [disabled]="loading">
+        {{ loading ? 'Cadastrando...' : 'Cadastrar' }}
+      </button>
+ 
+      <p class="error" *ngIf="errorMessage">{{ errorMessage }}</p>
+    </form>
+ 
+    <button type="button" class="back-btn" (click)="goToLogin()">
+      Voltar para login
+    </button>
+  </div>
+</div>
+ 

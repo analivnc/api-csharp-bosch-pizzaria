@@ -1,0 +1,17 @@
+<div class="layout">
+  <header class="topbar">
+    <img src="../../../../assets/snoop.png" alt="">
+    <div class="brand">Bosch Pizza</div>
+    <button class="menu-btn" (click)="toggleMenu()">☰</button>
+    <nav [class.open]="menuOpen">
+      <a routerLink="/home" routerLinkActive="active">Home</a>
+      <a routerLink="/pizzas" routerLinkActive="active">Pizzas</a>
+      <a routerLink="/clientes">Clientes</a>
+      <button type="button" (click)="logout()">Sair</button>
+    </nav>
+  </header>
+
+  <main class="content">
+    <router-outlet></router-outlet>
+  </main>
+</div>
